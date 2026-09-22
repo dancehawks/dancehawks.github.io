@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>麻风树-生物能源植物资源与种植应用指南</title>
+    <meta name="description" content="麻风树（Jatropha curcas）是一种重要的非粮生物能源植物。本站提供麻风树的生物特性、种植技术、油脂提取工艺、应用领域及市场分析，是麻风树种植户与能源产业从业者的专业参考平台。">
+    <meta name="keywords" content="麻风树, Jatropha curcas, 生物柴油, 非粮能源, 油桐, 植物种植">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #2e7d32; /* 森林绿 */
+            --primary-light: #e8f5e9;
+            --secondary-color: #f57f17; /* 能源橙 */
+            --text-dark: #1b1b1b;
+            --text-gray: #555555;
+            --text-light: #888888;
+            --bg-body: #f9f9f9;
+            --bg-white: #ffffff;
+            --border-radius: 8px;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.08);
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-body);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* 布局容器 */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 顶部导航 */
+        header {
+            background-color: var(--bg-white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+        }
+
+        nav a {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--primary-color);
+        }
+
+        .cta-btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .cta-btn:hover {
+            background-color: #1b5e20;
+            color: white;
+        }
+
+        /* Hero 区域 */
+        .hero {
+            background: linear-gradient(rgba(0, 50, 0, 0.7), rgba(0, 50, 0, 0.7)), url('https://picsum.photos/seed/jatropha_forest/1600/900.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            opacity: 0.9;
+        }
+
+        .hero-tags {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+            font-size: 0.9rem;
+            color: #ddd;
+        }
+
+        .hero-tags span {
+            background: rgba(255,255,255,0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+        }
+
+        /* 介绍部分 */
+        .intro-section {
+            padding: 60px 0;
+            background: var(--bg-white);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 2rem;
+            color: var(--text-dark);
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            color: var(--text-gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .intro-text h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+
+        .intro-text p {
+            margin-bottom: 15px;
+            color: var(--text-gray);
+            text-align: justify;
+        }
+
+        .intro-image {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+        }
+
+        .intro-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* 核心价值卡片 */
+        .features {
+            padding: 60px 0;
+            background-color: var(--primary-light);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            background: var(--bg-white);
+            padding: 30px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .feature-card h4 {
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        /* 种植技术指南 */
+        .guide-section {
+            padding: 60px 0;
+            background: var(--bg-white);
+        }
+
+        .guide-steps {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .step-item {
+            position: relative;
+        }
+
+        .step-number {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin: 0 auto 20px;
+        }
+
+        .step-item h4 {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .step-item p {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            text-align: center;
+        }
+
+        .arrow-down {
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--primary-light);
+            font-size: 20px;
+        }
+
+        /* 应用领域 */
+        .applications {
+            padding: 60px 0;
+            background-color: #f1f8e9;
+        }
+
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .app-card {
+            background: white;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .app-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .app-content {
+            padding: 20px;
+        }
+
+        .app-content h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .app-content p {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .app-link {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* 数据统计 */
+        .stats {
+            padding: 60px 0;
+            background-color: var(--text-dark);
+            color: white;
+        }
+
+        .stats-grid {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+
+        .stat-item p {
+            font-size: 1.1rem;
+            opacity: 0.8;
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #1a1a1a;
+            color: #888;
+            padding: 60px 0 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h5 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 900px) {
+            .intro-grid {
+                grid-template-columns: 1fr;
+            }
+            .intro-image {
+                order: -1;
+            }
+            .guide-steps {
+                grid-template-columns: 1fr 1fr;
+            }
+            .arrow-down {
+                display: none;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .nav-wrapper {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+            nav ul {
+                margin: 15px 0;
+                gap: 15px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            .guide-steps {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-wrapper">
+            <a href="#" class="logo">麻风树<span>百科</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active">植物简介</a></li>
+                    <li><a href="#planting">种植指南</a></li>
+                    <li><a href="#applications">应用领域</a></li>
+                    <li><a href="#market">市场分析</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="cta-btn">联系专家</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-tags">
+                    <span>生物柴油原料</span>
+                    <span>生态修复</span>
+                    <span>耐旱经济作物</span>
+                </div>
+                <h1>麻风树：中国未来能源的绿色希望</h1>
+                <p>麻风树（Jatropha curcas L.）是一种适应性强、生长迅速的木本油料植物。其种子含油量高，是生产生物柴油和工业油脂的理想原料，在退耕还林和荒山治理中具有巨大应用价值。</p>
+                <div style="margin-top: 30px;">
+                    <a href="#planting" class="cta-btn" style="padding: 12px 30px; font-size: 1.1rem;">开始了解种植</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="intro-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>什么是麻风树？</h2>
+                    <p>深入解析这一重要能源植物的生物学特性与生态价值</p>
+                </div>
+                <div class="intro-grid">
+                    <div class="intro-text">
+                        <h3>生物柴油的理想原料</h3>
+                        <p>麻风树，又称小桐子、芙蓉树，为大戟科麻风树属落叶灌木或小乔木。原产于美洲热带地区，现已广泛分布于非洲、亚洲和南美洲的热带及亚热带地区。</p>
+                        <p>其最大的经济价值在于种子。麻风树种子含油率通常在 40% 至 60% 之间，油品酸价低、凝固点适中，经过酯化或酯交换工艺处理后，可转化为高质量的生物柴油，硫含量极低，符合国际环保标准。</p>
+                        <p>除了能源用途，麻风树的叶、皮、根含有剧毒的麻风树毒素，可用于医药和农药研发，具有很高的科研价值。</p>
+                    </div>
+                    <div class="intro-image">
+                        <img src="https://picsum.photos/seed/jatropha_leaves/600/400.jpg" alt="麻风树植物形态">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Values Section -->
+        <section class="features">
+            <div class="container">
+                <div class="section-title">
+                    <h2>种植麻风树的核心优势</h2>
+                    <p>为何选择麻风树作为经济林树种？</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🌱</div>
+                        <h4>耐旱耐瘠</h4>
+                        <p>麻风树对土壤要求不严，耐干旱贫瘠，适合在坡地、荒山等不宜种植粮食作物的土地上生长，能有效防止水土流失。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h4>产油量高</h4>
+                        <p>单株产油量高，盛果期可长达 50 年以上。其油脂不与粮油争地，符合“非粮”生物能源的发展战略。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">♻️</div>
+                        <h4>生态友好</h4>
+                        <p>种植麻风树有助于荒漠化治理和生态修复。同时，其根系发达，能有效固土保水，改善局部小气候。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Planting Guide Section -->
+        <section id="planting" class="guide-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>种植技术指南</h2>
+                    <p>从选种到收获的科学流程</p>
+                </div>
+                <div class="guide-steps">
+                    <div class="step-item">
+                        <div class="step-number">1</div>
+                        <h4>选地整地</h4>
+                        <p>选择光照充足、排水良好的地块。可采用穴状整地，规格一般为 50cm × 50cm × 50cm。</p>
+                        <div class="arrow-down">↓</div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">2</div>
+                        <h4>苗木培育</h4>
+                        <p>采用播种或嫁接育苗。春季是最佳播种期，需选择饱满、无病虫害的种子进行催芽处理。</p>
+                        <div class="arrow-down">↓</div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">3</div>
+                        <h4>定植管理</h4>
+                        <p>幼苗长至 30-50cm 时进行定植，密度一般为 2m × 3m 至 3m × 4m。定植后需及时浇定根水。</p>
+                        <div class="arrow-down">↓</div>
+                    </div>
+                    <div class="step-item">
+                        <div class="step-number">4</div>
+                        <h4>抚育与采种</h4>
+                        <p>前两年需进行除草松土。定植后 3-4 年开始结果，8-10 年进入盛果期，每年 10-12 月为采种期。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Applications Section -->
+        <section id="applications" class="applications">
+            <div class="container">
+                <div class="section-title">
+                    <h2>主要应用领域</h2>
+                    <p>多元化的产业价值体系</p>
+                </div>
+                <div class="app-grid">
+                    <div class="app-card">
+                        <img src="https://picsum.photos/seed/oil_press/400/300.jpg" alt="生物柴油生产">
+                        <div class="app-content">
+                            <h4>生物柴油生产</h4>
+                            <p>利用麻风树油进行酯交换反应，生产符合欧盟 DIN EN 14214 或美国 ASTM D6751 标准的生物柴油，可作为传统柴油的替代燃料。</p>
+                            <a href="#" class="app-link">了解工艺流程 →</a>
+                        </div>
+                    </div>
+                    <div class="app-card">
+                        <img src="https://picsum.photos/seed/soap_making/400/300.jpg" alt="工业油脂">
+                        <div class="app-content">
+                            <h4>工业油脂应用</h4>
+                            <p>麻风树油可用于生产润滑油、高级肥皂、化妆品原料以及生产生物塑料的原料，市场前景广阔。</p>
+                            <a href="#" class="app-link">查看应用案例 →</a>
+                        </div>
+                    </div>
+                    <div class="app-card">
+                        <img src="https://picsum.photos/seed/medicine/400/300.jpg" alt="医药价值">
+                        <div class="app-content">
+                            <h4>医药与农药</h4>
+                            <p>提取的麻风树毒素具有抗肿瘤、抗病毒活性，同时也被用作植物源农药，用于防治害虫。</p>
+                            <a href="#" class="app-link">深入科研 →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3>40-60%</h3>
+                        <p>种子平均含油率</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>3-5年</h3>
+                        <p>开始挂果周期</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50年+</h3>
+                        <p>盛果期可持续年限</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50-100kg</h3>
+                        <p>单株年均产果量</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" style="padding: 60px 0; background: white;">
+            <div class="container">
+                <div class="section-title">
+                    <h2>常见问题 (FAQ)</h2>
+                </div>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <article style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 10px;">麻风树有毒吗？</h3>
+                        <p style="color: var(--text-gray);">麻风树全株有毒，特别是种子和茎皮中含有大量的麻风树毒素（Phorbol esters）和葲麻油酸。因此，在种植过程中需注意防护，避免误食，且果实成熟后需谨慎采摘。但在工业提炼和加工过程中，毒素会被有效去除或转化。</p>
+                    </article>
+                    <article style="margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid #eee;">
+                        <h3 style="color: var(--primary-color); margin-bottom: 10px;">麻风树适合在哪些地区种植？</h3>
+                        <p style="color: var(--text-gray);">麻风树喜温暖气候，耐旱耐瘠薄，适宜在年均气温 15℃ 以上、年降雨量 400-1500mm 的热带、亚热带地区生长。在中国，云南、四川、广西、贵州等省区均有大面积种植试验和推广。</p>
+                    </article>
+                    <article>
+                        <h3 style="color: var(--primary-color); margin-bottom: 10px;">种植麻风树的经济回报如何？</h3>
+                        <p style="color: var(--text-gray);">麻风树种植属于长周期投资，前期投入主要用于苗木和土地整理。虽然单株产量受气候和品种影响较大，但作为生物能源作物，其产业链条长（种植-加工-能源），政策支持力度大，长期来看具有较高的生态效益和经济效益。</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo" style="margin-bottom: 20px;">麻风树<span>百科</span></div>
+                    <p style="opacity: 0.7;">专注于麻风树生物能源研究与推广，致力于为种植户提供科学指导，为能源企业提供可靠原料信息。</p>
+                </div>
+                <div class="footer-col">
+                    <h5>快速链接</h5>
+                    <ul>
+                        <li><a href="#">植物简介</a></li>
+                        <li><a href="#planting">种植技术</a></li>
+                        <li><a href="#applications">应用领域</a></li>
+                        <li><a href="#">政策法规</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>资源下载</h5>
+                    <ul>
+                        <li><a href="#">种植手册</a></li>
+                        <li><a href="#">病虫害防治</a></li>
+                        <li><a href="#">市场行情</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>联系我们</h5>
+                    <ul>
+                        <li>电话：010-12345678</li>
+                        <li>邮箱：info@jatropha-example.com</li>
+                        <li>地址：中国·某市某区某路</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 麻风树百科网 版权所有 | 仅供技术参考与学术交流</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+  </html>
